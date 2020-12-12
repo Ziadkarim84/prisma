@@ -255,7 +255,9 @@ nav li a {
     margin: auto;
     width: 50%;
 }
-
+button.slick-prev.slick-arrow,button.slick-next.slick-arrow{
+    display: none!important;
+}
 
 
 /*********Goal Quote**************/
