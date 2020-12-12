@@ -128,7 +128,7 @@ nav li a {
     padding: 0px 10px;
 }
 
-.pacotes button {
+.pacotes button{
     padding: 10px 25px;
     border-radius: 25px;
     border-style: none;
@@ -149,10 +149,20 @@ nav li a {
     padding: 2vw 5vw;
 }
 
+.pacotes-all button{
+    border-style: none;
+    background: transparent;
+}
+
 .pacotes-logo {
     width: 100%;
     display: block;
     margin: auto;
+    opacity: 50%;
+}
+
+.pacotes-all .active{
+    opacity: 100%;
 }
 
 /**************Section 4**************/
@@ -327,7 +337,7 @@ nav li a {
         width: 90vw;
     }
 
-    .pacotes button {
+    .pacotes button{
         padding: 7px 15px;
         font-size: .8rem;
 
@@ -383,7 +393,7 @@ nav li a {
         width: 100vw;
     }
 
-    .pacotes button {
+    .pacotes button{
         padding: 7px 15px;
         font-size: .6rem;
 

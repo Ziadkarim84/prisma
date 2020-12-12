@@ -130,24 +130,24 @@
         <div class="pacotes-all">
             <div class="row">
                 <div class="col">
-                    <img src="images/fertbase.png" alt="fertbase" class="pacotes-logo" id="fertbase">
+<img src="images/fertbase.png" alt="fertbase" class="pacotes-logo active" id="fertbase" onclick="changeDesc(this)">
                 </div>
                 <div class="col">
-                    <img src="images/fertbio.png" alt="fertbio" class="pacotes-logo" id="fertbio">
+                    <img src="images/fertbio.png" alt="fertbio" class="pacotes-logo" id="fertbio" onclick="changeDesc(this)">
                 </div>
                 <div class="col">
-                    <img src="images/fertplus.png" alt="fertplus" class="pacotes-logo" id="fertplus">
+                    <img src="images/fertplus.png" alt="fertplus" class="pacotes-logo" id="fertplus" onclick="changeDesc(this)">
                 </div>
                 <div class="col">
-                    <img src="images/fertmax.png" alt="fertmax" class="pacotes-logo" id="fertmax">
+                    <img src="images/fertmax.png" alt="fertmax" class="pacotes-logo" id="fertmax" onclick="changeDesc(this)">
                 </div>
                 <div class="col">
-                    <img src="images/extras.png" alt="extras" class="pacotes-logo" id="extras">
+                    <img src="images/extras.png" alt="extras" class="pacotes-logo" id="extras" onclick="changeDesc(this)">
                 </div>
 
             </div>
         </div>
-        <button type="button">ENTRE EM CONTATO CONOSCO
+        <button type="button" class="entre">ENTRE EM CONTATO CONOSCO
         </button>
     </section>
     <section class="section-4">
@@ -251,6 +251,24 @@ CEP: 75909-080</div>
             </div>
         </div>
     </section>
+    
+    
+    <script type="text/javascript">
+        
+        var packages = ["fertbase", "fertbio", "fertplus", "fertmax", "extras"];
+        var prev = document.getElementById("fertbase");
+        
+        function changeDesc(name){
+            prev.style.opacity = "50%";
+            prev=name;
+            name.style.opacity = "100%";
+        }
+        
+        
+    
+    </script>
+    
+    
 
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
