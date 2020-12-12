@@ -118,10 +118,11 @@
     </div>
 
     <section class="pacotes">
+        <img src="images/pacotes-popup.png" alt="" class="pacotes-popup btn" id="pacotes-popup">
         <div id="top-banner">
             <img src="images/fertbase.png" alt="fertbase" id="top-banner-logo">
         </div>
-        <div id="top-button"><button type="button"> SAIBA MAIS
+        <div id="top-button"><button type="button" onclick="popup('pacotes-popup')"> SAIBA MAIS
             </button></div>
         <div class="description">
             <img src="images/fertbase-banner.png" alt="" id="changeable-banner">
@@ -130,7 +131,7 @@
         <div class="pacotes-all">
             <div class="row">
                 <div class="col">
-<img src="images/fertbase.png" alt="fertbase" class="pacotes-logo active" id="fertbase" onclick='changeDesc(this,"fertbase")'>
+                    <img src="images/fertbase.png" alt="fertbase" class="pacotes-logo active" id="fertbase" onclick='changeDesc(this,"fertbase")'>
                 </div>
                 <div class="col">
                     <img src="images/fertbio.png" alt="fertbio" class="pacotes-logo" onclick='changeDesc(this,"fertbio")'>
@@ -139,10 +140,10 @@
                     <img src="images/fertplus.png" alt="fertplus" class="pacotes-logo" onclick='changeDesc(this,"fertplus")'>
                 </div>
                 <div class="col">
-                    <img src="images/fertmax.png" alt="fertmax" class="pacotes-logo"  onclick='changeDesc(this,"fertmax")'>
+                    <img src="images/fertmax.png" alt="fertmax" class="pacotes-logo" onclick='changeDesc(this,"fertmax")'>
                 </div>
                 <div class="col">
-                    <img src="images/extras.png" alt="extras" class="pacotes-logo"  onclick='changeDesc(this,"extras")'>
+                    <img src="images/extras.png" alt="extras" class="pacotes-logo" onclick='changeDesc(this,"extras")'>
                 </div>
 
             </div>
@@ -151,10 +152,11 @@
         </button>
     </section>
     <section class="section-4">
+       <img src="images/prisma-academy-popup.png" alt="" class="pacotes-popup academy-popup" id="academy-popup">
         <div class="row">
             <div class="col-6"></div>
             <div class="col-6">
-                <button>SAIBA MAIS</button>
+                <button onclick="popup('academy-popup')">SAIBA MAIS</button>
             </div>
         </div>
     </section>
@@ -205,45 +207,45 @@
             </div>
         </div>
     </section>
-    
+
     <section class="goal-quote">
         “Nosso objetivo é entender os fatores limitantes às altas produtividades
-em cada ambiente e dessa forma recomendar ações que atinjam
-a máxima eficiência do processo produtivo.”
+        em cada ambiente e dessa forma recomendar ações que atinjam
+        a máxima eficiência do processo produtivo.”
     </section>
-    
+
     <section class="footer">
         <div class="row">
             <div class="col" style="text-align: center;">
                 <img src="images/logo-grey.png" alt="prisma" class="logo-grey">
                 <br><br>
                 ANALISANDO SUA LAVOURA
-POR DIVERSOS ÂNGULOS.
+                POR DIVERSOS ÂNGULOS.
             </div>
             <div class="col">
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acessos
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acessos
                 <ul>
-                <li>Home</li>
-                <li> A Prisma</li>
-                <li> Serviços</li>
-                <li>Blog</li>
-                <li> Contato</li>
-                <li>Acesso do Cliente</li>
+                    <li>Home</li>
+                    <li> A Prisma</li>
+                    <li> Serviços</li>
+                    <li>Blog</li>
+                    <li> Contato</li>
+                    <li>Acesso do Cliente</li>
                 </ul>
             </div>
             <div class="col">
                 <div><span><img src="images/blue-whatsapp.png" alt="" class="small-icons"></span> +55 (64) 3213-7310</div><br>
                 <div><span><img src="images/blue-mail.png" alt="" class="small-icons"></span> contato@iaprisma.com.br</div><br>
                 <div><span><img src="images/blue-location.png" alt="" class="small-icons"></span> Avenida JK, Qd.14 Lt.08,
-Setor Morada do Sol,
-Rio Verde, Goiás, Brasil
-CEP: 75909-080</div>
-           
-           <div class="socials">
-               <img src="images/blue-facebook.png" alt="facebook" class="social-icon">
-               <img src="images/blue-instagram.png" alt="facebook" class="social-icon">
-               <img src="images/blue-linkedin.png" alt="facebook" class="social-icon">
-           </div>
+                    Setor Morada do Sol,
+                    Rio Verde, Goiás, Brasil
+                    CEP: 75909-080</div>
+
+                <div class="socials">
+                    <img src="images/blue-facebook.png" alt="facebook" class="social-icon">
+                    <img src="images/blue-instagram.png" alt="facebook" class="social-icon">
+                    <img src="images/blue-linkedin.png" alt="facebook" class="social-icon">
+                </div>
             </div>
             <div class="col">
                 Membros Associados:
@@ -251,28 +253,29 @@ CEP: 75909-080</div>
             </div>
         </div>
     </section>
-    
-    
+
+
     <script type="text/javascript">
         var prev = document.getElementById("fertbase");
-        var packageTopLogo= document.getElementById("top-banner-logo");
+        var packageTopLogo = document.getElementById("top-banner-logo");
         var description = document.getElementById("changeable-banner");
-        function changeDesc(name,logo){
+
+        function changeDesc(name, logo) {
             prev.style.opacity = "50%";
-            prev=name;
+            prev = name;
             name.style.opacity = "100%";
-            packageTopLogo.src = "images/"+logo+".png";
-            description.src = "images/"+logo+"-banner.png";
+            packageTopLogo.src = "images/" + logo + ".png";
+            description.src = "images/" + logo + "-banner.png";
         }
-        
-        
-    
+
+        function popup(name) {
+            document.getElementById(name).style.visibility = "visible";
+
+        }
     </script>
-    
+
     
 
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>

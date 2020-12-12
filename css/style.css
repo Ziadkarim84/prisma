@@ -4,7 +4,9 @@
 
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 /*******************NAVBAR*********************/
 .nav-contact {
@@ -165,6 +167,18 @@ nav li a {
     opacity: 100%;
 }
 
+
+.pacotes-popup{
+   
+    position: absolute;
+    display: block;
+    left: 10vw;
+    margin-top: -5vw;
+    width: 80vw;
+    visibility: hidden;
+}
+
+
 /**************Section 4**************/
 .section-4 {
     background-image: url(../images/section-4_1.png);
@@ -184,9 +198,18 @@ nav li a {
     background-color: #808080;
     color: white;
     margin-top: 45%;
-    margin-right: 9vw;
+    margin-right: 11vw;
 }
 
+.academy-popup{
+    height: 35vw;
+    width: auto !important;
+    display: block;
+    margin: auto;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
 
 /**************Section 5**************/
 
@@ -366,6 +389,16 @@ nav li a {
     .section-3-head {
         font-size: 1.2rem;
     }
+    
+    .pacotes-popup{
+   
+    
+    left: 5vw;
+    
+    width: 90vw;
+    
+}
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -413,4 +446,12 @@ nav li a {
         padding: 5vw 10vw;
         font-size: .6rem;
     }
+    .pacotes-popup{
+   
+    
+    left: 2.5vw;
+    
+    width: 95vw;
+    
+}
 }
