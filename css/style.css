@@ -1,0 +1,406 @@
+@font-face {
+    src: url(../fonts/Ageone_bold.ttf);
+    font-family: Ageone_bold;
+
+}
+
+
+
+/*******************NAVBAR*********************/
+.nav-contact {
+    margin-top: 10px;
+    padding-right: 12vw;
+}
+
+.nav-contact button {
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px 20px;
+    display: inline-block;
+    border-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.access {
+    background-color: #006180;
+    color: white;
+}
+
+.whatsapp {
+    background-color: #D8D8D8;
+}
+
+.logo {
+    width: 250px;
+}
+
+nav.navbar {
+    padding: 10px 10vw;
+}
+
+nav li a {
+    font-size: 1rem;
+}
+
+
+
+/*************Carousel************/
+.carousel-indicators > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.carousel-indicators > li.active {
+    background-color: #689C25;
+}
+
+/**********SECTION_2***************/
+
+.section-2 {
+    background-image: url(../images/section-2-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 35vw;
+    padding: 2vw 0 2vw 40vw;
+    color: #CCCBCB;
+}
+
+
+
+.video {
+    height: 10vw;
+    margin-top: 12vw;
+}
+
+
+.row-2-text {
+    margin-top: 10vw;
+    font-size: 1rem;
+}
+
+.section-2 button {
+    padding: 5px 25px;
+    border-radius: 25px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/**************Section 3**************/
+
+.section-3-head {
+    width: 100%;
+    padding: 2vw 0vw;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.section-3 {
+    background-image: url(../images/section-3.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 50vw;
+}
+
+
+
+/************Pacotes**************/
+.pacotes {
+    text-align: center;
+    padding: 2vw 0;
+}
+
+.pacotes #top-banner img {
+    width: 20vw;
+}
+
+.pacotes #top-banner,
+.pacotes #top-button {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.pacotes button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #006180;
+}
+
+.pacotes .description img {
+    display: block;
+    margin: auto;
+    width: 80vw;
+
+}
+
+.pacotes-all {
+    padding: 2vw 5vw;
+}
+
+.pacotes-logo {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/**************Section 4**************/
+.section-4 {
+    background-image: url(../images/section-4_1.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 35vw;
+    text-align: center;
+}
+
+.section-4 button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border-style: none;
+    border-radius: 25px;
+    background-color: #808080;
+    color: white;
+    margin-top: 45%;
+    margin-right: 9vw;
+}
+
+
+/**************Section 5**************/
+
+
+.section-5 {
+    background-image: url(../images/section-5.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 35vw;
+}
+
+/**************Section 6**************/
+
+.section-6 {
+    padding: 0vw 5vw;
+
+
+}
+
+.section-6 img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.section-6 p,
+.section-6 b {
+    font-size: 1rem;
+}
+
+
+
+/***********PARCEIROS****************/
+
+.perceiros {
+    padding: 2vw 10vw;
+}
+
+.perceiros img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
+
+/*********Goal Quote**************/
+
+.goal-quote {
+    padding: 5vw 30vw;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #006180;
+    color: white;
+}
+
+
+
+/**************Foooter***********/
+
+.footer {
+    background-color: #1C1C1C;
+    color: #606060;
+    padding: 5vw;
+    font-size: 1rem;
+}
+
+.logo-grey {
+    width: 80%;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.social-icon,
+.small-icons {
+    width: 1rem;
+}
+
+.members {
+    width: 300px;
+}
+
+/*************MEDIA QUERY****************/
+
+@media only screen and (max-width: 991px) {
+
+    .nav-contact {
+        padding-right: 0px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .section-2 {
+        height: 40vw;
+        padding: 1vw 0 0vw 38vw;
+    }
+
+    .row-2-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .row-2-text p,
+    .row-2-text button,
+    .footer {
+        font-size: .8rem;
+    }
+
+    .section-3-head {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 200px;
+    }
+
+    .section-2 {
+        height: 40vw;
+        padding: .5vw 0 0vw 40vw;
+    }
+
+    .row-2-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .row-2-text p,
+    .row-2-text button {
+        font-size: .6rem;
+    }
+
+    .section-4 button {
+        font-size: .7rem;
+        padding: 2px 20px;
+        margin-top: 50%;
+    }
+
+    .section-6 {
+        text-align: center;
+    }
+
+    .pacotes .description img {
+
+        width: 90vw;
+    }
+
+    .pacotes button {
+        padding: 7px 15px;
+        font-size: .8rem;
+
+    }
+
+    .section-6 p,
+    .section-6 b,
+    .footer {
+        font-size: .8rem;
+    }
+
+    .perceiros img {
+
+        width: 60%;
+    }
+
+    .goal-quote {
+        padding: 5vw 20vw;
+        font-size: .8rem;
+    }
+
+    .nav-contact button {
+        font-size: .7rem;
+    }
+
+    .section-3-head {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        width: 150px;
+    }
+
+    .section-2 {
+        height: 45vw;
+        padding: 0vw .5vw 0vw 40vw;
+        line-height: 1;
+    }
+
+    .row-2-text h2 {
+        font-size: .8rem;
+    }
+
+    .row-2-text p,
+    .row-2-text button {
+        font-size: .5rem;
+    }
+
+    .pacotes .description img {
+
+        width: 100vw;
+    }
+
+    .pacotes button {
+        padding: 7px 15px;
+        font-size: .6rem;
+
+    }
+
+    .section-6 p,
+    .section-6 b {
+        font-size: .6rem;
+    }
+
+    .perceiros img {
+
+        width: 80%;
+    }
+
+    .goal-quote {
+        padding: 5vw 10vw;
+        font-size: .6rem;
+    }
+}
