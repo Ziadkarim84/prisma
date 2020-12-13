@@ -119,11 +119,12 @@
     </div>
 
     <section class="pacotes">
+        <button type="button" class="pacotes-popup-button" onclick="popup('pacotes-popup',false)" id="x1">x</button>
         <img src="images/pacotes-popup.png" alt="" class="pacotes-popup btn" id="pacotes-popup">
         <div id="top-banner">
             <img src="images/fertbase.png" alt="fertbase" id="top-banner-logo">
         </div>
-        <div id="top-button"><button type="button" onclick="popup('pacotes-popup')"> SAIBA MAIS
+        <div id="top-button"><button type="button" onclick="popup('pacotes-popup',true)"> SAIBA MAIS
             </button></div>
         <div class="description">
             <img src="images/fertbase-banner.png" alt="" id="changeable-banner">
@@ -153,11 +154,12 @@
         </button>
     </section>
     <section class="section-4">
+        <button type="button" class="pacotes-popup-button academy-popup-button" onclick="popup('academy-popup',false)" id="x2">x</button>
         <img src="images/prisma-academy-popup.png" alt="" class="pacotes-popup academy-popup" id="academy-popup">
         <div class="row">
             <div class="col-6"></div>
             <div class="col-6">
-                <button onclick="popup('academy-popup')">SAIBA MAIS</button>
+                <button class="saiba" onclick="popup('academy-popup',true)">SAIBA MAIS</button>
             </div>
         </div>
     </section>
@@ -300,11 +302,11 @@
             description.src = "images/" + logo + "-banner.png";
         }
 
-        function popup(name) {
-            document.getElementById(name).style.visibility = "visible";
-
+        function popup(name, visible) {
+            document.getElementById(name).style.visibility = visible ? "visible" : "hidden";
+            document.getElementById("x1").style.visibility = visible ? "visible" : "hidden";
+            document.getElementById("x2").style.visibility = visible ? "visible" : "hidden";
         }
-
     </script>
 
 
@@ -326,8 +328,5 @@
                 nextArrow: false
             });
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
