@@ -189,10 +189,11 @@ nav li a {
     border-radius: 0;
     padding: 0;
     font-size: 2rem;
-    left: 85vw;
+    left: 83vw;
     margin-top: -3vw;
     border: none;
     visibility: hidden;
+    padding: 10px;
 }
 /**************Section 4**************/
 .section-4 {
@@ -226,7 +227,7 @@ nav li a {
     right: 0;
 }
 .section-4>.pacotes-popup-button{
-    left: 75vw;
+    left: 72vw;
     margin-top: 0vw;
     color: black;
   z-index: 10;
