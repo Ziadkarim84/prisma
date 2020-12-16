@@ -122,12 +122,12 @@
     </div>
 
     <section class="pacotes">
-        <button type="button" class="pacotes-popup-button" onclick="popup('pacotes-popup',false)" id="x1">x</button>
+        <button type="button" class="pacotes-popup-button" onclick="popup('pacotes-popup',false,'x1')" id="x1">x</button>
         <img src="images/fertbase-popup.png" alt="" class="pacotes-popup btn" id="pacotes-popup">
         <div id="top-banner">
             <img src="images/fertbase.png" alt="fertbase" id="top-banner-logo">
         </div>
-        <div id="top-button"><button type="button" onclick="popup('pacotes-popup',true)"> SAIBA MAIS
+        <div id="top-button"><button type="button" onclick="popup('pacotes-popup',true,'x1')"> SAIBA MAIS
             </button></div>
         <div class="description">
             <img src="images/fertbase-banner.png" alt="" id="changeable-banner">
@@ -157,12 +157,12 @@
         </button>
     </section>
     <section class="section-4" id="academy">
-        <button type="button" class="pacotes-popup-button academy-popup-button" onclick="popup('academy-popup',false)" id="x2">x</button>
+        <button type="button" class="pacotes-popup-button academy-popup-button" onclick="popup('academy-popup',false,'x2')" id="x2">x</button>
         <img src="images/prisma-academy-popup.png" alt="" class="pacotes-popup academy-popup" id="academy-popup">
         <div class="row">
             <div class="col-6"></div>
             <div class="col-6">
-                <button class="saiba" onclick="popup('academy-popup',true)">SAIBA MAIS</button>
+                <button class="saiba" onclick="popup('academy-popup',true,'x2')">SAIBA MAIS</button>
             </div>
         </div>
     </section>
@@ -317,10 +317,9 @@ document.onkeydown = function(evt) {
             
         }
 
-        function popup(name, visible) {
+        function popup(name, visible,id) {
             document.getElementById(name).style.visibility = visible ? "visible" : "hidden";
-            document.getElementById("x1").style.visibility = visible ? "visible" : "hidden";
-            document.getElementById("x2").style.visibility = visible ? "visible" : "hidden";
+            document.getElementById(id).style.visibility = visible ? "visible" : "hidden";
         }
         
      
