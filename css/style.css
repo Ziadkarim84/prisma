@@ -180,13 +180,15 @@ nav li a {
     height: 35vw;
     padding: 2vw 0 2vw 40vw;
     color: #CCCBCB;
-    
+
 }
-.section-2 .row .col-5{
+
+.section-2 .row .col-5 {
     margin-top: 8vw;
-    
+
 }
-.video-text{
+
+.video-text {
     font-size: 1.5rem;
     line-height: 2;
     font-family: Montserrat-Bold;
@@ -203,10 +205,10 @@ nav li a {
 
 .video {
     height: 10vw;
-    
+
     display: block;
     margin: auto;
-    
+
 }
 
 
@@ -258,7 +260,7 @@ nav li a {
 .pacotes #top-button {
     display: inline-block;
     padding: 0px 10px;
-     font-family: Helvetica-Bold;
+    font-family: Helvetica-Bold;
 }
 
 .pacotes button {
@@ -269,7 +271,7 @@ nav li a {
     font-size: 1rem;
     color: white;
     background-color: #006180;
-       font-family: Helvetica-Bold;
+    font-family: Helvetica-Bold;
 }
 
 .pacotes .description img {
@@ -308,14 +310,16 @@ nav li a {
     margin-top: -5vw;
     width: 80vw;
     visibility: hidden;
+    z-index: 9;
 }
 
 .pacotes > .pacotes-popup-button,
 .section-4 > .pacotes-popup-button {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     background-color: transparent;
     color: white;
+
     border-radius: 0;
     padding: 0;
     font-size: 2rem;
@@ -324,6 +328,10 @@ nav li a {
     border: none;
     visibility: hidden;
     padding: 10px;
+}
+
+.pacotes > .pacotes-popup-button {
+    background-color: #006180;
 }
 
 /**************Section 4**************/
@@ -392,10 +400,11 @@ nav li a {
     margin-top: 10px;
 }
 
-.section-6 p{
+.section-6 p {
     font-family: Helvetica;
     font-size: 1rem;
 }
+
 .section-6 b {
     font-family: Helvetica-Bold;
     font-size: 1rem;
@@ -429,7 +438,7 @@ button.slick-next.slick-arrow {
     text-align: center;
     background-color: #006180;
     color: white;
-      font-family: Gotham-Light;
+    font-family: Gotham-Light;
 }
 
 
@@ -438,15 +447,15 @@ button.slick-next.slick-arrow {
 
 .footer {
     background-color: #1C1C1C;
-font-family: Helvetica;
-      color: #606060;
+    font-family: Helvetica;
+    color: #606060;
     padding: 5vw;
 
 }
 
 .footer a {
     font-size: 1rem;
-   
+
     color: #606060;
     text-decoration: none;
     font-family: Helvetica;
@@ -593,15 +602,17 @@ font-family: Helvetica;
         font-size: 1.5rem;
 
     }
-.video-text{
-    font-size: 1rem;
-   
-}
-    .video {
-    height: 12vw;
 
-    
-}
+    .video-text {
+        font-size: 1rem;
+
+    }
+
+    .video {
+        height: 12vw;
+
+
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -664,8 +675,9 @@ font-family: Helvetica;
         font-size: 1rem;
 
     }
-    .video-text{
-    font-size: .7rem;
-   
-}
+
+    .video-text {
+        font-size: .7rem;
+
+    }
 }
